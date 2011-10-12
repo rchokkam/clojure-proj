@@ -1,0 +1,120 @@
+@Clojure
+ - Is a dialect for Lisp, Lisp is a special langauge. 
+ - Is homoiconic with almost no syntax.
+ - Has a full macrosystem also supports metaprogramming. 
+ - Is a functional language with first-class functions.
+ - Immutable data structures.
+ - Inbuilt concurrency semantics. 
+ - Hosted on the extremely mature and performant JavaVM.
+ - Seamless interoperability with Java code.
+ - General purpose as well as dynamic programming language.
+ - Excellently suited for domain-specific langaue style of programming.
+
+@Why Clojure?
+ - A Lisp
+ - For functional programming
+ - Symbiotic with an established Platform
+ - Designed for Concurrency
+ - Code as data.
+
+@Clojure unique features
+ 01. Dynamic Development.
+ 02. Functional Programming.
+ 03. Lisp.
+ 04. Runtime Plymorphism.
+ 05. Concurrent Programming.
+ 06. Immutability.
+ 07. Higer-order functions.
+ 08. Laziness.
+ 09. Excellent concurrency semantics.
+ 10. Software Transaction Memory.
+ 11. Hosted on the JVM
+
+@Clojure program structure
+ 01. Literals
+	- Strings
+	- Characters
+	- nil
+	- true
+	- false
+	- integers
+	- floating point numbers
+	- ratios
+ 02. Vectors
+ 03. Lists
+ 04. Maps
+ 05. Sets
+ 06. Symbols
+ 07. Special Forms
+	- def
+	- if
+	- do
+	- let
+	- quote
+	- var
+	- fn
+	- loop
+	- recure
+	- throw
+	- try
+	- monitor-enter
+	- monitor-exit
+	- other special forms
+		- dot(.)
+		- new
+		- set!
+ 08. Composite Forms
+ 09. Function Calls
+ 10. Macros
+
+@Clojure and OOP Paradigm
+ - Modularity    => Clojure namespacing mechanism
+ - Polymorphism  => Clojure Multimethods
+ - Encapsulation => Clojure functions
+ - Reusability   => Clojure functions
+
+@Function
+ A function, is a mathematical sense, expresses the idea that one quantity
+ (the argument of the function, also known as the input) completely
+ determines another quantity (the value, or the output).
+	
+@Clojure Functions
+ In Clojure, all functions are first-class objects.
+ - Can be dynamically created at any point during the execution of the program.
+ - Are not intrinsically named, can be bound to symbols.
+ - Can be stored as value in any data structure.
+ - Can be passed to, and returned from, other functions
+
+@Closure Oriented Programming
+ - Functions as parameter
+ - Functions as return value
+ - Composing functions
+
+@Anonymous Functions
+ Three reasons to create the anonymous functions
+ - The function is so brief and self-explanatory that giving it a name makes the code harder to read, not easier.
+ - The function is beign used only from inside another function and needs a local name, not a top-level binding.
+ - The function is created inside another function for the purpose of closing over some data. 
+
+@Clojure coding guidelines
+ 1. Start every source file with a namespace declaration using ns.
+ 2. Use :import and :use expression in ns to describe the classes and namespaces it depends on.
+ 3. Always use :only option of :use to make it clear which symbols you need from the other namespace.
+ 4. Reuse good names, add the :refer-clojure expression to ns if needed.
+ 5. Structure your source files to avoid the need for forward declarations.
+    Place "primitive" definations near the top and the "composite" definations that depend on them toward the bottom.
+ 6. Use let to make your code cleaner and to store the results of calculations, so you don't have to perform them multiple times.
+ 7. Use refs provide synchronous, coordinated updates, and allow direct access to the STM System
+ 8. Use atoms to manage synchronous, independent state (such as chahed or memorized values) with maximum efficientcy.
+ 9. Use agents to manage asynchronous state as well as introduce concurrency into your program.
+ 10. Use vars to maintain state within a stack discipline to efficiently simulate mutable variables for algorithms that require it.
+ 11. Use validator functions to maintain data integrity.
+ 12. Use watches to trigger events dependent on an identitys values. 
+ 13. Use the anonymous function only when you find that they make your code more readable.
+ 14. Use the metadata reader macor to add metadata to vars and parameters.
+ 15. Use with-meta to add metadata to data.
+
+@Reference
+ 1. Practical Clojure by Luke VanderHart and Stuart Sierra
+ 2. Clojure In Action - Amit Rathore
+ 3. Programmin Clojure - Stuart Halloway
